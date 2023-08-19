@@ -14,8 +14,8 @@ class Solution:
         for i in strs:
             lengthofStrings.append(len(i))
         lengthofStrings.sort()
-        lengthoflargeststring = lengthofStrings[0]
-        for j in range(0, lengthoflargeststring):
+        lengthofsmallestststring = lengthofStrings[0]
+        for j in range(0, lengthofsmallestststring):
             for i in range(0, len(strs) - 1):
                 if strs[i][j] == strs[i + 1][j]:
                     continue
@@ -26,5 +26,5 @@ class Solution:
 
 
 A = Solution()
-result = A.longestCommonPrefix([])
+result = A.longestCommonPrefix(["flower","flow","flight"])
 print(result)
